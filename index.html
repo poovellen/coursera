@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
 
 <head>
     <title>Hello </title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
 </head>
 
-
-
 <body>
-    <h1>hello coursera dfs </h1>
+
+    <h1> first app</h1>
+    <div ng-controller="myFirstcontroller">
+        {{name}} <br>
+        <input type="text" ng-model="name">
+
+
+    </div>
+
+
+
 </body>
 
 
