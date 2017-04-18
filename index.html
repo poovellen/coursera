@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html ng-app="myFirstApp">
+
+<html ng-app="DIApp">
 
 <head>
     <title>Hello </title>
@@ -8,16 +9,23 @@
 </head>
 
 <body>
+    <h1> lecture 9 </h1>
 
-    <h1> first app</h1>
-    <div ng-controller="myFirstcontroller">
-        {{name}} <br>
-        <input type="text" ng-model="name">
+    <div ng-controller='DIController'>
+        {{name}} has a message :
+        <br> {{sayMessage()}}
 
 
+        <div>
+
+
+            <input type="text" ng-model="name" ng-blur="upper()"> <br>
+
+        </div>
+        <div>
+            cost: {{cookieCost | currency :"$" :3 }}
+        </div>
     </div>
-
-
 
 </body>
 
